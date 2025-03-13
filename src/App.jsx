@@ -1,11 +1,8 @@
 import "./App.css";
+import Demigods from "./demigods/demigods";
 
 function App() {
-  return (
-    <>
-      <div className="a4-page">Hello World!</div>
-    </>
-  );
+  return <Demigods />;
 }
 
 export default App;

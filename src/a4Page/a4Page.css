@@ -1,7 +1,7 @@
 .a4-page {
   width: 210mm;
   height: 297mm;
-  margin: auto;
+  margin: 25px auto;
   padding: 0;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
