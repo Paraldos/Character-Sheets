@@ -1,0 +1,25 @@
+.skill {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 50px;
+  gap: 5px;
+  height: 25px;
+}
+
+.skill-awoken {
+  --size: 12px;
+  border: 2px solid #000;
+  border-radius: 500px;
+  margin: auto;
+  width: var(--size);
+  height: var(--size);
+}
+
+.skill-description {
+  margin: auto 0;
+}
+
+.skill-value {
+  border: 2px solid #000;
+  border-radius: 3px;
+  height: 100%;
+}
