@@ -13,14 +13,12 @@ function PageLeft() {
     "Zähigkeit",
   ];
   const socialSkills = ["Charisma", "Provozieren", "Kontakte", "Ressourcen"];
-  const supernaturalSkills = ["Mystik", "Nekromantie", "Urkraft"];
 
   return (
     <div className="page-left">
       <SkillBox headLine="Geistig" skills={mentalSkills} />
       <SkillBox headLine="Körperlich" skills={physicalSkills} />
       <SkillBox headLine="Sozial" skills={socialSkills} />
-      <SkillBox headLine="Übernatürlich" skills={supernaturalSkills} />
     </div>
   );
 }
