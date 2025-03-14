@@ -1,20 +1,14 @@
 import "./demigods.css";
 import PageTop from "./PageTop/PageTop";
 import PageLeft from "./PageLeft/PageLeft";
+import PageRight from "./PageRight/PageRight";
 
 function Demigods() {
   return (
     <div className="a4-page demigods">
       <PageTop />
       <PageLeft />
-      <div className="bottom">
-        <div className="right">
-          <p>Ausrüstung</p>
-          <p>Gesundheit</p>
-          <p>Essenz</p>
-          <p>Notizen</p>
-        </div>
-      </div>
+      <PageRight />
     </div>
   );
 }

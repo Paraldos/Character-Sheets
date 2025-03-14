@@ -8,17 +8,3 @@
   grid-template-rows: auto 1fr;
   gap: 25px;
 }
-
-.bottom {
-  background-color: green;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.left {
-  background-color: blue;
-}
-
-.right {
-  background-color: yellow;
-}
