@@ -1,6 +1,6 @@
 .skill {
   display: grid;
-  grid-template-columns: auto auto 1fr 50px;
+  grid-template-columns: auto auto 1fr 60px;
   gap: 5px;
   height: 30px;
   margin: 2px 5px;

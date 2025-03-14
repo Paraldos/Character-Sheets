@@ -1,5 +1,5 @@
 .passive-value {
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   overflow: hidden;
   padding-bottom: 65px;
@@ -10,7 +10,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 .passive-value-label {
@@ -18,7 +18,7 @@
 }
 
 .passive-value-value {
-  width: 70px;
+  width: 60px;
   background-color: white;
   border-radius: 3px;
 }
