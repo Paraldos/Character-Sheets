@@ -1,7 +1,7 @@
 function Notes() {
   return (
-    <div>
-      <h1>Notes</h1>
+    <div className="notes black-box">
+      <p className="black-box-headline">Notes</p>
       <p>Notes go here</p>
     </div>
   );

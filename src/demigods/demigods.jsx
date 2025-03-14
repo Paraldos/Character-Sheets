@@ -1,4 +1,5 @@
 import "./demigods.css";
+import "./BlackBox/BlackBox.css";
 import PageTop from "./PageTop/PageTop";
 import PageLeft from "./PageLeft/PageLeft";
 import PageRight from "./PageRight/PageRight";
