@@ -2,17 +2,23 @@ import "./PageLeft.css";
 import SkillBox from "../SkillBox/SkillBox";
 
 function PageLeft() {
-  const mentalSkills = ["Bildung", "Handwerk", "Medizin", "Wahrnehmung"];
+  const mentalSkills = [
+    "Bildung",
+    "Handwerk",
+    "Medizin",
+    "Okkultismus",
+    "Wahrnehmung",
+    "Willenskraft",
+  ];
   const physicalSkills = [
-    "Diebstahl",
-    "Geschick",
+    "Athletik",
+    "Akrobatik",
+    "Fingerfertigkeit",
     "Heimlichkeit",
     "Kampf",
-    "Kraft",
     "Überleben",
-    "Zähigkeit",
   ];
-  const socialSkills = ["Charisma", "Provozieren", "Kontakte", "Ressourcen"];
+  const socialSkills = ["Charisma", "Kontakte", "Provozieren", "Ressourcen"];
 
   return (
     <div className="page-left">
