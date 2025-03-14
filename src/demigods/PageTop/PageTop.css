@@ -1,20 +1,18 @@
 .page-top {
   height: fit-content;
-
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+}
 
-  .description {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+.page-top__first-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 100px;
+  gap: 15px;
+}
 
-  .flaws {
-    grid-column-start: 3;
-    grid-column-end: 5;
+.page-top__description {
+  input {
+    height: 60px;
   }
 }

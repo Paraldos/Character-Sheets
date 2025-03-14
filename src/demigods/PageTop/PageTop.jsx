@@ -4,10 +4,15 @@ import "./PageTop.css";
 function PageTop() {
   return (
     <div className="page-top">
-      <InputWithLabel labelText="Name" />
-      <InputWithLabel labelText="Konzept" />
-      <InputWithLabel labelText="Beschreibung" />
-      <InputWithLabel labelText="Schwächen" />
+      <div className="page-top__first-line">
+        <InputWithLabel labelText="Name" />
+        <InputWithLabel labelText="Konzept" />
+        <InputWithLabel labelText="Stufe" />
+      </div>
+      <InputWithLabel
+        labelText="Beschreibung / Schwächen"
+        className="page-top__description"
+      />
     </div>
   );
 }
