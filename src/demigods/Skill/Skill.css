@@ -1,8 +1,9 @@
 .skill {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 50px;
+  grid-template-columns: auto auto 1fr 50px;
   gap: 5px;
-  height: 25px;
+  height: 30px;
+  margin: 2px 5px;
 }
 
 .skill-awoken {
@@ -16,6 +17,11 @@
 
 .skill-description {
   margin: auto 0;
+}
+
+.skill-specialization {
+  margin: 0 10px;
+  border-bottom: 2px solid black;
 }
 
 .skill-value {
