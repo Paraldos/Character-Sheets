@@ -1,0 +1,9 @@
+.notes-list {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.notes-list-item {
+  border-bottom: 2px solid #000;
+  height: 40px;
+}

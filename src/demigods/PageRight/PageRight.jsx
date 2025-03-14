@@ -1,16 +1,15 @@
 import "./PageRight.css";
-import Tools from "../Tools/Tools";
+import Notes from "../Notes/Notes";
 import Health from "../Health/Health";
 import Essence from "../Essence/Essence";
-import Notes from "../Notes/Notes";
 
 function PageRight() {
   return (
     <div className="page-right">
-      <Tools />
+      <Notes headline="Gepäck" />
       <Health />
       <Essence />
-      <Notes />
+      <Notes headline="Notizen" />
     </div>
   );
 }

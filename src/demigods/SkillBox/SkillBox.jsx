@@ -1,16 +1,16 @@
 import "./SkillBox.css";
 import Skill from "../Skill/Skill";
+import BlackBox from "../BlackBox/BlackBox";
 
 function SkillBox({ headLine, skills }) {
   return (
-    <div className="skill-box black-box">
-      <p className="skill-box-headline black-box-headline">{headLine}</p>
+    <BlackBox className="skill-box black-box" headline={headLine}>
       <ul className="skill-box-list">
         {skills.map((skill) => (
           <Skill key={skill} skill={skill} />
         ))}
       </ul>
-    </div>
+    </BlackBox>
   );
 }
 
