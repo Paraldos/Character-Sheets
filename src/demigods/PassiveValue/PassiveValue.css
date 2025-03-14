@@ -1,0 +1,24 @@
+.passive-value {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 65px;
+}
+
+.passive-value-headline {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+
+.passive-value-label {
+  margin: 5px;
+}
+
+.passive-value-value {
+  width: 70px;
+  background-color: white;
+  border-radius: 3px;
+}
