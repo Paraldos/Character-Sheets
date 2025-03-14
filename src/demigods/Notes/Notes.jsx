@@ -1,7 +1,7 @@
 import "./Notes.css";
 import BlackBox from "../BlackBox/BlackBox";
 
-function Tools({ headline, amountOfLines = 5 }) {
+function Tools({ headline, amountOfLines = 4 }) {
   const lines = Array.from({ length: amountOfLines });
 
   return (

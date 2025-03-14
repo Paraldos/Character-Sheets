@@ -8,7 +8,7 @@ function PageRight() {
       <Notes headline="Gepäck" />
       <PassiveValue label="Gesundheit" />
       <PassiveValue label="Essenz" />
-      <Notes headline="Notizen" />
+      <Notes headline="Notizen" amountOfLines={7} />
     </div>
   );
 }
