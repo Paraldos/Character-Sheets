@@ -10,8 +10,10 @@ function PageTop() {
         <InputWithLabel labelText="Stufe" />
       </div>
 
-      <InputWithLabel labelText="Beschreibung" />
-      <InputWithLabel labelText="Schwächen" />
+      <InputWithLabel
+        labelText="Beschreibung / Schwächen"
+        className={"page-top__description"}
+      />
     </div>
   );
 }
