@@ -3,6 +3,7 @@ import Page from "../page/Page";
 import BasicInfos from "./basicInfos/BasicInfos";
 import Attributes from "./attributes/attributes";
 import Skills from "./skills/Skills";
+import PassvieValues from "./passiveValues/PassiveValues";
 
 function Diablo() {
   return (
@@ -10,15 +11,10 @@ function Diablo() {
       <div className="page__left">
         <BasicInfos />
         <Attributes />
+        <PassvieValues />
         <Skills />
         <h2>Sprachen</h2>
         <h2>Ausrüstung</h2>
-        <h2>Merkmale</h2>
-        <ul>
-          <li>TP</li>
-          <li>MP</li>
-          <li>RK</li>
-        </ul>
       </div>
       <div className="page__right">
         <h1>Playbook Title + Stufe</h1>

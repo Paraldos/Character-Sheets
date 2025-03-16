@@ -1,7 +1,7 @@
 .attributes {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
+  gap: 15px;
   list-style: none;
 
   label {
