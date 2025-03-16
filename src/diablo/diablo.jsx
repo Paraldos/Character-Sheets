@@ -6,6 +6,8 @@ import Skills from "./skills/Skills";
 import PassvieValues from "./passiveValues/PassiveValues";
 import Inventory from "./inventory/inventory";
 
+import PlaybookTitle from "./playbookTitle/PlaybookTitle";
+
 function Diablo() {
   return (
     <Page className={"page__landscape diablo"}>
@@ -19,7 +21,7 @@ function Diablo() {
         <Inventory />
       </div>
       <div className="page__right">
-        <h1>Playbook Title + Stufe</h1>
+        <PlaybookTitle playbookTitle="Magier" />
         <p>Playbook Description</p>
         <h2>Talente</h2>
         <ul>

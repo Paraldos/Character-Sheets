@@ -5,7 +5,7 @@
   font-size: 14px;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 25px;
+  gap: 45px;
 }
 
 .page__left {
