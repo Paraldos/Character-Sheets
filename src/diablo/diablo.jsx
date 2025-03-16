@@ -4,7 +4,7 @@ import BasicInfos from "./basicInfos/BasicInfos";
 import Attributes from "./attributes/attributes";
 import Skills from "./skills/Skills";
 import PassvieValues from "./passiveValues/PassiveValues";
-import InputWithLabel from "./inputWithLabel/inputWithLabel";
+import Inventory from "./inventory/inventory";
 
 function Diablo() {
   return (
@@ -14,7 +14,7 @@ function Diablo() {
         <Attributes />
         <PassvieValues />
         <Skills />
-        <h2>Ausrüstung</h2>
+        <Inventory />
       </div>
       <div className="page__right">
         <h1>Playbook Title + Stufe</h1>

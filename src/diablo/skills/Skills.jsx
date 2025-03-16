@@ -21,7 +21,7 @@ function Skills() {
 
   return (
     <div className="skills">
-      <h3>Fertigkeiten (Vorteil auf dazu passende Proben)</h3>
+      <h3>Fertigkeiten (Vorteil auf passende Proben)</h3>
       <ul>
         {list_of_skills.map((skill) => (
           <li key={skill}>{skill}</li>

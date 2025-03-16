@@ -7,7 +7,6 @@ function PassvieValues() {
       <InputWithLabel labelText={"TP"} />
       <InputWithLabel labelText={"MP"} />
       <InputWithLabel labelText={"RK"} />
-      <InputWithLabel labelText={"Vorräte"} />
     </ul>
   );
 }
