@@ -8,3 +8,8 @@
   position: relative;
   overflow: hidden;
 }
+
+.page__landscape {
+  width: 297mm;
+  height: 210mm;
+}

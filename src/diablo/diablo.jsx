@@ -1,11 +1,8 @@
 import "./diablo.css";
+import Page from "../page/Page";
 
 function Diablo() {
-  return (
-    <div>
-      <h1>Diablo</h1>
-    </div>
-  );
+  return <Page className={"page__landscape diablo"}></Page>;
 }
 
 export default Diablo;

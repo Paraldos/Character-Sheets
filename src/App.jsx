@@ -1,8 +1,9 @@
 import "./App.css";
 import Demigods from "./demigods/demigods";
+import Diablo from "./diablo/diablo";
 
 function App() {
-  return <Demigods />;
+  return <Diablo />;
 }
 
 export default App;
