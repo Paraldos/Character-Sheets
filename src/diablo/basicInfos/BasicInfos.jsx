@@ -1,4 +1,5 @@
 import "./BasicInfos.css";
+import InputWithLabel from "../inputWithLabel/inputWithLabel";
 
 function BasicInfos() {
   const list_of_baisc_infos = ["Name", "Rasse", "Hintergrund", "Gesinnung"];
@@ -6,10 +7,7 @@ function BasicInfos() {
   return (
     <ul className="basicInfos">
       {list_of_baisc_infos.map((info) => (
-        <li>
-          <input type="text"></input>
-          <label>{info}</label>
-        </li>
+        <InputWithLabel key={info} labelText={info} />
       ))}
     </ul>
   );

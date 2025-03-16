@@ -4,21 +4,12 @@
   gap: 8px;
   list-style: none;
 
-  li {
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
   label {
+    margin-left: 0;
     text-align: center;
   }
 
   input {
     aspect-ratio: 1;
-    border: none;
   }
 }

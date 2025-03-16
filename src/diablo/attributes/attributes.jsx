@@ -1,4 +1,5 @@
 import "./attributes.css";
+import InputWithLabel from "../inputWithLabel/inputWithLabel";
 
 function Attributes() {
   const list_of_attributes = [
@@ -12,10 +13,7 @@ function Attributes() {
   return (
     <ul className="attributes">
       {list_of_attributes.map((attribute) => (
-        <li key={attribute}>
-          <input type="text" />
-          <label>{attribute}</label>
-        </li>
+        <InputWithLabel key={attribute} labelText={attribute} />
       ))}
     </ul>
   );
