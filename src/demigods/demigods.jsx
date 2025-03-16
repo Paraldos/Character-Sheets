@@ -1,4 +1,5 @@
 import "./demigods.css";
+import Page from "../page/Page";
 import PageTop from "./PageTop/PageTop";
 import PageCenter from "./PageCenter/PageCenter";
 import PageLeft from "./PageLeft/PageLeft";
@@ -6,13 +7,13 @@ import PageRight from "./PageRight/PageRight";
 
 function Demigods() {
   return (
-    <div className="a4-page demigods">
+    <Page className={"demigods"}>
       <PageTop />
       <PageCenter>
         <PageLeft />
         <PageRight />
       </PageCenter>
-    </div>
+    </Page>
   );
 }
 
