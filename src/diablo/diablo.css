@@ -1,6 +1,9 @@
 .diablo {
+  padding: 40px !important;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
   display: grid;
-  padding: 40px;
   grid-template-columns: 2fr 3fr;
-  gap: 40px;
+  gap: 25px;
 }

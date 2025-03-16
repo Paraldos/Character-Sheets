@@ -3,18 +3,13 @@ import Page from "../page/Page";
 import LeftPage from "./leftPage/leftPage";
 import RightPage from "./rightPage/RightPage";
 import Attributes from "./attributes/attributes";
+import BasicInfos from "./basicInfos/BasicInfos";
 
 function Diablo() {
   return (
     <Page className={"page__landscape diablo"}>
       <LeftPage>
-        <h2>Basic Infos</h2>
-        <ul>
-          <li>Name</li>
-          <li>Rasse</li>
-          <li>Hintergrund</li>
-          <li>Gesinnung</li>
-        </ul>
+        <BasicInfos />
         <h2>Attribute</h2>
         <Attributes />
         <h2>Fertigkeiten</h2>

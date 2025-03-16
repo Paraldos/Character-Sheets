@@ -11,11 +11,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 2px;
   }
 
   label {
-    margin: 0;
     text-align: center;
   }
 
