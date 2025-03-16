@@ -1,5 +1,11 @@
 .basicInfos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 15px;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 15px;
+  }
 }
