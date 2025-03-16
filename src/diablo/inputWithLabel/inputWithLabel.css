@@ -1,11 +1,22 @@
 .input-with-label {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: black;
   display: flex;
   flex-direction: column;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
 
-  input {
-    border: none;
-  }
+input {
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 100%;
+}
+
+label {
+  color: white;
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+  margin: 2px 0 0 5px;
 }

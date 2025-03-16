@@ -7,8 +7,57 @@ import PassvieValues from "./passiveValues/PassiveValues";
 import Inventory from "./inventory/inventory";
 
 import PlaybookTitle from "./playbookTitle/PlaybookTitle";
+import Abilities from "./abilities/abilities";
 
 function Diablo() {
+  const list_of_talents = [
+    { description: "+2 Schaden auf Manöver" },
+    { description: "+2 Permanente MP." },
+    { description: "Du kannst Leichte Rüstung tragen." },
+    { description: "Du kannst alle Waffen benutzen." },
+  ];
+
+  const list_of_manuvers = [
+    {
+      title: "Analyse",
+      description:
+        "Aktion / Erzähler beantwortet dir drei Ja/Nein Fragen zu einem Ort, Objekt oder einer Person.",
+    },
+    {
+      title: "Geschoss",
+      description:
+        "Aktion / 3W6 Schaden auf Distanz. Jeder Schadenswürfel kann ein anderes Ziel treffen.",
+    },
+    {
+      title: "Explosion",
+      description:
+        "Aktion / Jeder in einem 3m Bereich erleidet 3W6 + WE Schaden.",
+    },
+    {
+      title: "Levitation",
+      description:
+        "Aktion oder Bewegung / Du kannst für eine Szene durch die Luft schweben.",
+    },
+    {
+      title: "Licht",
+      description:
+        "Aktion / Ein Gegenstand leuchtet für eine Stunde (Realzeit) hell wie eine Fackel.",
+    },
+    {
+      title: "Teleport",
+      description:
+        "Aktion oder Bewegung / Versetzt dich an einen Ort, den du sehen kannst oder in den letzten 24 Stunden besucht hast.",
+    },
+    {
+      title: "Telekinese",
+      description: "Aktion / Bewege ein Objekt (max. 500kg) mit Gedankenkraft.",
+    },
+    {
+      title: "Zauberrüstung",
+      description: "Aktion oder Bewegung / Du erhältst für eine Szene +4 RK.",
+    },
+  ];
+
   return (
     <Page className={"page__landscape diablo"}>
       <div className="page__left">
@@ -22,19 +71,13 @@ function Diablo() {
       </div>
       <div className="page__right">
         <PlaybookTitle playbookTitle="Magier" />
-        <p>Playbook Description</p>
-        <h2>Talente</h2>
-        <ul>
-          <li>Talent 1</li>
-          <li>Talent 2</li>
-          <li>Talent 3</li>
-        </ul>
-        <h2>Manöver</h2>
-        <ul>
-          <li>Manöver 1</li>
-          <li>Manöver 2</li>
-          <li>Manöver 3</li>
-        </ul>
+        <p>
+          Ein gelehrter der arkanen Künste, der mit reiner Willenskraft die
+          Realität formen und mächtige Zauber wirken kann, dafür aber körperlich
+          zerbrechlich ist.
+        </p>
+        <Abilities title="Talente" list_of_abilities={list_of_talents} />
+        <Abilities title="Manöver" list_of_abilities={list_of_manuvers} />
       </div>
     </Page>
   );
