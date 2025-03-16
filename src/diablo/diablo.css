@@ -7,3 +7,9 @@
   grid-template-columns: 2fr 3fr;
   gap: 25px;
 }
+
+.page__left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

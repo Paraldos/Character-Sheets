@@ -1,16 +1,13 @@
 import "./diablo.css";
 import Page from "../page/Page";
-import LeftPage from "./leftPage/leftPage";
-import RightPage from "./rightPage/RightPage";
 import Attributes from "./attributes/attributes";
 import BasicInfos from "./basicInfos/BasicInfos";
 
 function Diablo() {
   return (
     <Page className={"page__landscape diablo"}>
-      <LeftPage>
+      <div className="page__left">
         <BasicInfos />
-        <h2>Attribute</h2>
         <Attributes />
         <h2>Fertigkeiten</h2>
         <ul>
@@ -29,8 +26,8 @@ function Diablo() {
           <li>MP</li>
           <li>RK</li>
         </ul>
-      </LeftPage>
-      <RightPage>
+      </div>
+      <div className="page__right">
         <h1>Playbook Title + Stufe</h1>
         <p>Playbook Description</p>
         <h2>Talente</h2>
@@ -45,7 +42,7 @@ function Diablo() {
           <li>Manöver 2</li>
           <li>Manöver 3</li>
         </ul>
-      </RightPage>
+      </div>
     </Page>
   );
 }
