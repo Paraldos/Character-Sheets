@@ -1,7 +1,8 @@
 import "./diablo.css";
 import Page from "../page/Page";
-import Attributes from "./attributes/attributes";
 import BasicInfos from "./basicInfos/BasicInfos";
+import Attributes from "./attributes/attributes";
+import Skills from "./skills/Skills";
 
 function Diablo() {
   return (
@@ -9,15 +10,7 @@ function Diablo() {
       <div className="page__left">
         <BasicInfos />
         <Attributes />
-        <h2>Fertigkeiten</h2>
-        <ul>
-          <li>Fertigkeit 1</li>
-          <li>Fertigkeit 2</li>
-          <li>Fertigkeit 3</li>
-          <li>Fertigkeit 4</li>
-          <li>Fertigkeit 5</li>
-          <li>Fertigkeit 6</li>
-        </ul>
+        <Skills />
         <h2>Sprachen</h2>
         <h2>Ausrüstung</h2>
         <h2>Merkmale</h2>

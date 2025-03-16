@@ -1,0 +1,29 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  ul {
+    list-style: none;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  li {
+    font-size: 1em;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  li:before {
+    content: "";
+    display: inline-block;
+    height: 90%;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+}
