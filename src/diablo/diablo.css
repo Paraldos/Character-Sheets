@@ -13,3 +13,9 @@
   flex-direction: column;
   gap: 15px;
 }
+
+.diablo__values {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

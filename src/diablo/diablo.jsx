@@ -11,8 +11,10 @@ function Diablo() {
     <Page className={"page__landscape diablo"}>
       <div className="page__left">
         <BasicInfos />
-        <Attributes />
-        <PassvieValues />
+        <div className="diablo__values">
+          <Attributes />
+          <PassvieValues />
+        </div>
         <Skills />
         <Inventory />
       </div>
