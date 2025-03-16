@@ -8,6 +8,7 @@ import PassvieValues from "./passiveValues/PassiveValues";
 import Inventory from "./inventory/inventory";
 
 import PlaybookTitle from "./playbookTitle/PlaybookTitle";
+import PlaybookBasics from "./playbookBasics/PlaybookBasics";
 import Abilities from "./abilities/abilities";
 
 function Diablo() {
@@ -27,6 +28,7 @@ function Diablo() {
           <div className="page__right">
             <PlaybookTitle playbookTitle={playbook.title} />
             <p>{playbook.description}</p>
+            <PlaybookBasics playbook={playbook} />
             <Abilities title="Talente" list_of_abilities={playbook.talents} />
             <Abilities title="Manöver" list_of_abilities={playbook.manuvers} />
           </div>

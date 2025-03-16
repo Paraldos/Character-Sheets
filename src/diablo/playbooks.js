@@ -2,6 +2,14 @@ const fighter = {
   title: "Krieger",
   description:
     "Ein Meister des bewaffneten Kampfes, der mit Entschlossenheit, Taktik und Ausdauer jede Schlacht dominiert, sei es mit Schwert, Axt oder Schild.",
+  basics: {
+    maxTP: "16 + Zähigkeit + Stufe",
+    maxMP: "4 + Stufe",
+    fertigkeiten: 2,
+    rüstungen: ["Alle"],
+    waffen: ["Alle"],
+  },
+
   talents: [
     { description: "+1 Permanente RK." },
     { description: "+4 Permanente TP." },
@@ -50,6 +58,14 @@ const mage = {
   title: "Magier",
   description:
     "Ein gelehrter der arkanen Künste, der mit reiner Willenskraft die Realität formen und mächtige Zauber wirken kann, dafür aber körperlich zerbrechlich ist.",
+  basics: {
+    maxTP: "12 + Zähigkeit + Stufe",
+    maxMP: "6 + Stufe",
+    fertigkeiten: 3,
+    rüstungen: ["Keine"],
+    waffen: ["Dolche, Kampfstäbe"],
+  },
+
   talents: [
     { description: "+2 Schaden auf Manöver" },
     { description: "+2 Permanente MP." },
@@ -106,7 +122,7 @@ const priest = {
     maxTP: "14 + Zähigkeit + Stufe",
     maxMP: "5 + Stufe",
     fertigkeiten: 3,
-    rüstungen: ["Leichte Rüstung", "Mittlere Rüstung", "Schild"],
+    rüstungen: ["Leichte Rüstungen", "Mittlere Rüstungen", "Schilde"],
     waffen: ["Einfache Waffen"],
   },
   talents: [
@@ -156,7 +172,7 @@ const rogue = {
     maxTP: "14 + Zähigkeit + Stufe",
     maxMP: "4 + Stufe",
     fertigkeiten: 4,
-    rüstungen: ["Leichte Rüstung", "Schild"],
+    rüstungen: ["Leichte Rüstungen", "Schilde"],
     waffen: ["Einfache Waffen"],
   },
   talents: [
