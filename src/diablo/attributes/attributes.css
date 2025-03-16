@@ -1,15 +1,11 @@
 .attributes {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 5px;
   list-style: none;
 
   label {
     margin-left: 0;
     text-align: center;
-  }
-
-  input {
-    aspect-ratio: 1;
   }
 }
