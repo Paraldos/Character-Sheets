@@ -1,0 +1,26 @@
+.attributes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  list-style: none;
+
+  li {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  label {
+    margin: 0;
+    text-align: center;
+  }
+
+  input {
+    aspect-ratio: 1;
+    border: none;
+  }
+}

@@ -2,6 +2,7 @@ import "./diablo.css";
 import Page from "../page/Page";
 import LeftPage from "./leftPage/leftPage";
 import RightPage from "./rightPage/RightPage";
+import Attributes from "./attributes/attributes";
 
 function Diablo() {
   return (
@@ -15,14 +16,7 @@ function Diablo() {
           <li>Gesinnung</li>
         </ul>
         <h2>Attribute</h2>
-        <ul>
-          <li>Attribut 1</li>
-          <li>Attribut 2</li>
-          <li>Attribut 3</li>
-          <li>Attribut 4</li>
-          <li>Attribut 5</li>
-          <li>Attribut 6</li>
-        </ul>
+        <Attributes />
         <h2>Fertigkeiten</h2>
         <ul>
           <li>Fertigkeit 1</li>
