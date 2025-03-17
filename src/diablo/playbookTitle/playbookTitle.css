@@ -22,8 +22,11 @@
 
   div {
     height: 100%;
-    width: 75px;
+    width: 160px;
     background-color: white;
     border-radius: 2px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
   }
 }

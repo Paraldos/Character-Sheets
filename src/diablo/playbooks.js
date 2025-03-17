@@ -21,6 +21,9 @@ const fighter = {
     {
       description: "Im Nahkampf zählt 19 und 20 als kritischer Treffer.",
     },
+    {
+      description: "Eine zusätzliche Fertigkeit.",
+    },
   ],
   manuvers: [
     {
@@ -69,6 +72,9 @@ const mage = {
     { description: "+2 Permanente MP." },
     { description: "Du kannst Leichte Rüstung tragen." },
     { description: "Du kannst alle Waffen benutzen." },
+    {
+      description: "Eine zusätzliche Fertigkeit.",
+    },
   ],
   manuvers: [
     {
@@ -129,6 +135,9 @@ const priest = {
     { description: "+2 Schaden gegen Dämonen und Untote." },
     { description: "+2 Permanente MP." },
     { description: "Du kannst alle Waffen benutzen." },
+    {
+      description: "Eine zusätzliche Fertigkeit.",
+    },
   ],
   manuvers: [
     {
@@ -178,6 +187,7 @@ const rogue = {
     { description: "+1 Attacke und Schaden im Fernkampf." },
     { description: "+2 Permanente RK." },
     { description: "+2W6 Schaden bei Attacken aus dem Hinterhalt." },
+    { description: "Zwei zusätzliche Fertigkeiten." },
   ],
   manuvers: [
     {
