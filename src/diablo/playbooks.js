@@ -11,17 +11,15 @@ const fighter = {
   },
 
   talents: [
+    { description: "+1 Attacke und Schaden im Fernkampf." },
+    { description: "+1 Attacke und Schaden im Nahkampf." },
     { description: "+1 Permanente RK." },
     { description: "+4 Permanente TP." },
-    { description: "+1 Attacke und Schaden im Nahkampf." },
-    { description: "+1 Attacke und Schaden im Fernkampf." },
     {
-      description:
-        "Fernkampf Attacke mit 19 und 20 zählen als kritischer Treffer.",
+      description: "Im Fernkampf zählt 19 und 20 als kritischer Treffer.",
     },
     {
-      description:
-        "Nahkampf Attacke mit 19 und 20 zählen als kritischer Treffer.",
+      description: "Im Nahkampf zählt 19 und 20 als kritischer Treffer.",
     },
   ],
   manuvers: [
