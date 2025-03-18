@@ -6,7 +6,7 @@ function Header() {
     <div className="header">
       <div className="header__first-line">
         <InputWithLabel labelText="Name" />
-        <InputWithLabel labelText="Konzept" />
+        <InputWithLabel labelText="Konzept / Motiv" />
         <InputWithLabel labelText="Stufe" />
       </div>
       <InputWithLabel
