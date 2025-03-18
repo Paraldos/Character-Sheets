@@ -9,17 +9,20 @@
   background-color: black;
   color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid black;
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .passive-value-label {
-  margin: 5px;
+  margin: 0 5px;
 }
 
 .passive-value-value {
   width: 60px;
+  height: 30px;
   background-color: white;
   border-radius: 3px;
 }

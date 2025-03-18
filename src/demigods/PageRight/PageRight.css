@@ -1,5 +1,5 @@
 .page-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 2fr auto auto 3fr;
+  gap: 15px;
 }
