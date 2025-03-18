@@ -8,3 +8,9 @@
   flex-direction: column;
   gap: 25px;
 }
+
+.demigods__bottom-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}

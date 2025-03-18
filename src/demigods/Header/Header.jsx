@@ -1,21 +1,20 @@
+import "./header.css";
 import InputWithLabel from "../InputWithLabel/InputWithLabel";
-import "./PageTop.css";
 
-function PageTop() {
+function Header() {
   return (
-    <div className="page-top">
-      <div className="page-top__first-line">
+    <div className="header">
+      <div className="header__first-line">
         <InputWithLabel labelText="Name" />
         <InputWithLabel labelText="Konzept" />
         <InputWithLabel labelText="Stufe" />
       </div>
-
       <InputWithLabel
         labelText="Beschreibung / Schwächen"
-        className={"page-top__description"}
+        className={"header__description"}
       />
     </div>
   );
 }
 
-export default PageTop;
+export default Header;

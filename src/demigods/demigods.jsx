@@ -1,18 +1,17 @@
 import "./demigods.css";
 import Page from "../page/Page";
-import PageTop from "./PageTop/PageTop";
-import PageCenter from "./PageCenter/PageCenter";
+import Header from "./Header/Header";
 import PageLeft from "./PageLeft/PageLeft";
 import PageRight from "./PageRight/PageRight";
 
 function Demigods() {
   return (
     <Page className={"demigods"}>
-      <PageTop />
-      <PageCenter>
+      <Header />
+      <div className="demigods__bottom-area">
         <PageLeft />
         <PageRight />
-      </PageCenter>
+      </div>
     </Page>
   );
 }

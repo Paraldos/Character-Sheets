@@ -1,4 +1,4 @@
-.page-top {
+.header {
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -6,13 +6,13 @@
   height: 100%;
 }
 
-.page-top__first-line {
+.header__first-line {
   display: grid;
   grid-template-columns: 1fr 1fr 100px;
   gap: 15px;
 }
 
-.page-top__description {
+.header__description {
   height: 100%;
 
   input {
