@@ -22,9 +22,21 @@ function PageLeft() {
 
   return (
     <div className="page-left">
-      <Skills headLine="Geistig" skills={mentalSkills} />
-      <Skills headLine="Körperlich" skills={physicalSkills} />
-      <Skills headLine="Sozial" skills={socialSkills} />
+      <Skills
+        headLine="Geistig"
+        skills={mentalSkills}
+        svgSrc="src/assets/mental.svg"
+      />
+      <Skills
+        headLine="Körperlich"
+        skills={physicalSkills}
+        svgSrc="src/assets/physical.svg"
+      />
+      <Skills
+        headLine="Sozial"
+        skills={socialSkills}
+        svgSrc="src/assets/social.svg"
+      />
     </div>
   );
 }

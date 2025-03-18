@@ -1,9 +1,9 @@
 import "./skills.css";
 import BlackBox from "../BlackBox/BlackBox";
 
-function Skills({ headLine, skills }) {
+function Skills({ headLine, skills, svgSrc }) {
   return (
-    <BlackBox className="skills" headline={headLine}>
+    <BlackBox className="skills" headline={headLine} svgSrc={svgSrc}>
       <ul className="skills__list">
         {skills.map((skill) => (
           <li className="skills__item">

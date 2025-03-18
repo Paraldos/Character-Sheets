@@ -1,6 +1,5 @@
 .page-right {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   justify-content: space-between;
 }
