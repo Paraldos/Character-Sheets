@@ -1,30 +1,36 @@
-.skill {
+.skills__list {
+  display: grid;
+  gap: 5px;
+  padding: 10px 5px;
+}
+
+.skills__item {
   display: grid;
   grid-template-columns: auto auto 1fr 60px;
-  gap: 5px;
+  gap: 10px;
   height: 30px;
   margin: 2px 5px;
 }
 
-.skill-awoken {
+.skills__item-btn {
   --size: 13px;
   border: 2px solid #000;
-  border-radius: 500px;
+  border-radius: 2px;
   margin: auto;
   width: var(--size);
   height: var(--size);
 }
 
-.skill-description {
+.skills__item-description {
   margin: auto 0;
+  padding-top: 2px;
 }
 
-.skill-specialization {
-  margin: 0 10px;
+.skills__item-specialization {
   border-bottom: 2px solid black;
 }
 
-.skill-value {
+.skills__item-value {
   border: 2px solid #000;
   border-radius: 3px;
   height: 100%;

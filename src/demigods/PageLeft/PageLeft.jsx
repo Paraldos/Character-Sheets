@@ -1,5 +1,5 @@
 import "./PageLeft.css";
-import SkillBox from "../SkillBox/SkillBox";
+import Skills from "../Skills/Skills";
 
 function PageLeft() {
   const mentalSkills = [
@@ -22,9 +22,9 @@ function PageLeft() {
 
   return (
     <div className="page-left">
-      <SkillBox headLine="Geistig" skills={mentalSkills} />
-      <SkillBox headLine="Körperlich" skills={physicalSkills} />
-      <SkillBox headLine="Sozial" skills={socialSkills} />
+      <Skills headLine="Geistig" skills={mentalSkills} />
+      <Skills headLine="Körperlich" skills={physicalSkills} />
+      <Skills headLine="Sozial" skills={socialSkills} />
     </div>
   );
 }
