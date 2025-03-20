@@ -1,4 +1,4 @@
-import "./skills.css";
+import styles from "./skills.module.css";
 
 function Skills() {
   const list_of_skills = [
@@ -20,7 +20,7 @@ function Skills() {
   ];
 
   return (
-    <div className="skills">
+    <div className={styles.skills}>
       <h3>Fertigkeiten (Vorteil auf passende Proben)</h3>
       <ul>
         {list_of_skills.map((skill) => (

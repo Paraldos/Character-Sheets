@@ -1,12 +1,12 @@
 .black-box {
-  border: 2px solid #3b3838;
+  border: 2px solid var(--color-one);
   overflow: hidden;
   border-radius: 5px;
 }
 
 .black-box-headline {
-  background-color: #3b3838;
-  color: white;
+  background-color: var(--color-one);
+  color: var(--color-two);
   padding: 5px;
   display: flex;
   justify-content: space-between;

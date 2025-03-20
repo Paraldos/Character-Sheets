@@ -1,17 +1,17 @@
 .passive-value {
-  border: 2px solid #3b3838;
+  border: 2px solid var(--color-one);
   border-radius: 5px;
   overflow: hidden;
   padding-bottom: 65px;
 }
 
 .passive-value-headline {
-  background-color: #3b3838;
-  color: white;
+  background-color: var(--color-one);
+  color: var(--color-two);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #3b3838;
+  border-bottom: 2px solid var(--color-one);
   font-size: 1.1rem;
   text-transform: uppercase;
 }
@@ -23,6 +23,6 @@
 .passive-value-value {
   width: 60px;
   height: 30px;
-  background-color: white;
+  background-color: var(--color-two);
   border-radius: 3px;
 }

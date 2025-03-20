@@ -1,6 +1,4 @@
-.demigods {
-  --color-one: #3b3838;
-
+.demigodsDomains {
   padding: 60px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -9,6 +7,8 @@
   grid-template-rows: auto auto;
   flex-direction: column;
   gap: 25px;
+
+  --color-one: #3b3838;
 }
 
 .demigods__bottom-area {

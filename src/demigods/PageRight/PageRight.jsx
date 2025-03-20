@@ -1,5 +1,5 @@
 import "./PageRight.css";
-import BlackBox from "../BlackBox/BlackBox";
+import BlackBox from "../../generalComponents/BlackBox/BlackBox";
 import PassiveValue from "../PassiveValue/PassiveValue";
 
 function PageRight() {

@@ -12,7 +12,7 @@
   margin: 2px 5px;
 }
 
-.skills__item-btn {
+.skills__btn {
   --size: 13px;
   border: 2px solid #3b3838;
   border-radius: 2px;
@@ -21,16 +21,16 @@
   height: var(--size);
 }
 
-.skills__item-description {
+.skills__description {
   margin: auto 0;
   padding-top: 2px;
 }
 
-.skills__item-specialization {
+.skills__specialization {
   border-bottom: 2px solid #3b3838;
 }
 
-.skills__item-value {
+.skills__value {
   border: 2px solid #3b3838;
   border-radius: 3px;
   height: 100%;

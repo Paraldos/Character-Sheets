@@ -1,4 +1,9 @@
 * {
+  --color-one: Black;
+  --color-two: White;
+  --color-three: Black;
+  --color-four: Black;
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
