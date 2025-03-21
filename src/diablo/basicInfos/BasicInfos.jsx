@@ -1,5 +1,5 @@
 import "./BasicInfos.css";
-import InputWithLabel from "../../generalComponents/BlackBox/inputWithLabel/inputWithLabel";
+import InputWithLabel from "../../generalComponents/inputWithLabel/InputWithLabel";
 
 function BasicInfos() {
   const list_of_baisc_infos = ["Name", "Rasse", "Hintergrund", "Gesinnung"];

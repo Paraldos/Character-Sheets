@@ -1,5 +1,5 @@
 import "./passiveValues.css";
-import InputWithLabel from "../../generalComponents/BlackBox/inputWithLabel/inputWithLabel";
+import InputWithLabel from "../../generalComponents/inputWithLabel/InputWithLabel";
 
 function PassvieValues() {
   return (

@@ -1,5 +1,5 @@
 import "./attributes.css";
-import InputWithLabel from "../../generalComponents/BlackBox/inputWithLabel/inputWithLabel";
+import InputWithLabel from "../../generalComponents/inputWithLabel/InputWithLabel";
 
 function Attributes() {
   const list_of_attributes = [

@@ -1,5 +1,5 @@
 import "./header.css";
-import InputWithLabel from "../InputWithLabel/InputWithLabel";
+import InputWithLabel from "../../generalComponents/inputWithLabel/InputWithLabel";
 
 function Header() {
   return (
