@@ -7,8 +7,6 @@ function App() {
   return (
     <>
       <DemigodsDomains />
-      <Demigods />
-      <Diablo />
     </>
   );
 }
