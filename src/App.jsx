@@ -6,7 +6,6 @@ import DemigodsDomains from "./demigods/DemigodsDomains";
 function App() {
   return (
     <>
-      <Demigods />
       <DemigodsDomains />
     </>
   );
