@@ -1,4 +1,5 @@
 import "./boldLegends.css";
+import Page from "../Page/Page.jsx";
 
 function BoldLegends() {
   return (
