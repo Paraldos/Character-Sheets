@@ -19,6 +19,9 @@ function BoldLegends() {
         </div>
       </div>
       <div>
+        <p>Ausrüstung</p>
+      </div>
+      <div>
 
       </div>
 
