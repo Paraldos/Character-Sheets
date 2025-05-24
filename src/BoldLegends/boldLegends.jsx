@@ -22,9 +22,8 @@ function BoldLegends() {
         <p>Ausrüstung</p>
       </div>
       <div>
-
+        <p>Kräfte</p>
       </div>
-
     </Page>
   );
 }
