@@ -17,12 +17,15 @@ function BoldLegends() {
           <p>Charisma</p>
           <p>Wissen</p>
         </div>
+        <div>
+          <p>Ausrüstung</p>
+        </div>
+        <div>
+          <p>Kräfte</p>
+        </div>
       </div>
       <div>
-        <p>Ausrüstung</p>
-      </div>
-      <div>
-        <p>Kräfte</p>
+
       </div>
     </Page>
   );
