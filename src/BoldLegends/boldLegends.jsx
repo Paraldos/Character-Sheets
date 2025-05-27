@@ -23,9 +23,12 @@ function BoldLegends() {
         <div>
           <p>Kräfte</p>
         </div>
+        <div>
+          <div>Wunden</div>
+        </div>
       </div>
       <div>
-
+        <h2>Notizen</h2>
       </div>
     </Page>
   );
