@@ -13,6 +13,9 @@ function BoldLegends() {
         </h1>
         <InputWithLabel labelText='Name' />
         <InputWithLabel labelText='Konzept / Motive' />
+        <InputWithLabel labelText='EP' />
+        <InputWithLabel labelText='Stufe' />
+        <InputWithLabel labelText='Schwächen' />
         <div>
           <p>Stärke</p>
           <p>Geschick</p>
