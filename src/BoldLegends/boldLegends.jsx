@@ -17,11 +17,11 @@ function BoldLegends() {
         <InputWithLabel labelText='Stufe' />
         <InputWithLabel labelText='Schwächen' />
         <div>
-          <p>Stärke</p>
-          <p>Geschick</p>
-          <p>Klugheit</p>
-          <p>Charisma</p>
-          <p>Wissen</p>
+          <InputWithLabel labelText='Stärke' />
+          <InputWithLabel labelText='Geschick' />
+          <InputWithLabel labelText='Klugheit' />
+          <InputWithLabel labelText='Charisma' />
+          <InputWithLabel labelText='Wissen' />
         </div>
         <div>
           <p>Ausrüstung</p>
