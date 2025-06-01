@@ -24,14 +24,12 @@ function BoldLegends() {
           <InputWithLabel labelText='Wissen' />
         </div>
         <div>
-          <p>Ausrüstung</p>
+          <h2>Ausrüstung</h2>
         </div>
         <div>
-          <p>Kräfte</p>
+          <h2>Kräfte</h2>
         </div>
-        <div>
-          <div>Wunden</div>
-        </div>
+        <div>Wunden</div>
       </div>
       <div>
         <h2>Notizen</h2>
