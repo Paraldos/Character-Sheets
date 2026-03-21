@@ -1,6 +1,5 @@
 import "./style.css";
+import Anderswelt from "./anderswelt/anderswelt";
 
 const app = document.getElementById("app");
-
-app.innerHTML = "BERT";
-console.log(app);
+new Anderswelt(app);

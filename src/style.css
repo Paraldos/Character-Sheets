@@ -18,10 +18,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
+p {
+  margin: 0;
+}
+
+.page {
   width: 29.7cm;
   height: 21cm;
   background-color: white;
   margin: auto;
   padding: 1cm;
+}
+
+.page-container {
+  display: grid;
+  gap: 1cm;
 }
