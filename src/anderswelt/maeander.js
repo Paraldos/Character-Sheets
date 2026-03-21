@@ -1,10 +1,16 @@
-import { getMaeanderDataUrl } from "./svgs";
+import { getMaeander, getMaeanderVertical } from "./svgs";
 
 export default class Maeander {
-  constructor(container) {
+  constructor(container, vertical = false) {
     const e = document.createElement("div");
     e.className = "maeander";
-    e.style.backgroundImage = getMaeanderDataUrl();
+
+    if (vertical) {
+      e.classList.add("maeander-vertical");
+      e.style.backgroundImage = getMaeanderVertical();
+    } else {
+      e.style.backgroundImage = getMaeander();
+    }
 
     container.appendChild(e);
     this.element = e;

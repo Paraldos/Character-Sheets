@@ -11,7 +11,11 @@ export default class Anderswelt extends Page {
     new Maeander(this.page);
     new Basics(this.page);
     new Maeander(this.page);
-    new Fertigkeiten(this.page);
-    new Maeander(this.page);
+
+    const e = document.createElement("div");
+    e.className = "anderswelt-bottom";
+    this.page.appendChild(e);
+
+    new Fertigkeiten(e);
   }
 }

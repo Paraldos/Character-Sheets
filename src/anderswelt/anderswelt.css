@@ -8,7 +8,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
 
   h1,
   h2,
@@ -16,14 +16,30 @@
   h4 {
     font-family: "AncientHellenic";
   }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.anderswelt-bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
 }
 
 .anderswelt .maeander {
   width: 100%;
   height: 25px;
-  margin: 6px 0;
   background-repeat: repeat-x;
   background-size: auto 100%;
+}
+
+.anderswelt .maeander-vertical {
+  width: 25px;
+  height: 100%;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
 }
 
 .anderswelt .basics {
@@ -55,7 +71,7 @@
 
 .anderswelt .fertigkeiten {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 25px;
 
   .block {
@@ -71,6 +87,9 @@
   }
 
   .fertigkeit div {
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-radius: 15px;
   }
 }
