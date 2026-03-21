@@ -23,11 +23,16 @@ p {
 }
 
 .page {
-  width: 29.7cm;
-  height: 21cm;
+  width: 21cm;
+  height: 29.7cm;
   background-color: white;
   margin: auto;
   padding: 1cm;
+}
+
+.page-landscape {
+  width: 29.7cm;
+  height: 21cm;
 }
 
 .page-container {

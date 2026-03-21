@@ -2,9 +2,10 @@ export default class Page {
   page;
   columns = [];
 
-  constructor(container) {
+  constructor(container, landscape = false) {
     this.page = document.createElement("div");
     this.page.className = "page";
+    if (landscape) this.page.classList.add("page-landscape");
     container.appendChild(this.page);
   }
 

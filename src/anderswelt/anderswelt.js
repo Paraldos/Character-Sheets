@@ -7,7 +7,6 @@ export default class Anderswelt extends Page {
   constructor(container) {
     super(container);
     this.page.classList.add("anderswelt");
-    this.addColumns(3);
-    new Fertigkeiten(this.columns[0]);
+    new Fertigkeiten(this.page);
   }
 }
