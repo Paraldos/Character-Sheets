@@ -1,22 +1,76 @@
 .anderswelt {
-  .fertigkeiten {
+  @font-face {
+    font-family: "AncientHellenic";
+    src: url("src/assets/ancienthellenic-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "AncientHellenic";
+  }
+}
+
+.anderswelt .maeander {
+  width: 100%;
+  height: 25px;
+  margin: 6px 0;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+
+.anderswelt .basics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  .basic-field {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+  }
+
+  .basic-field label {
+    font-size: 0.65em;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+  }
+
+  .basic-value {
+    border-bottom: 1px solid black;
+    min-height: 1.8em;
+  }
+
+  .basic-field.full {
+    grid-column: 1 / -1;
+  }
+}
+
+.anderswelt .fertigkeiten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .fertigkeit {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: 1fr 2cm;
+  }
 
-    .block {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .fertigkeit {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 2cm;
-    }
-
-    .fertigkeit > div {
-      border: 1px solid black;
-    }
+  .fertigkeit div {
+    border-bottom: 1px solid black;
   }
 }

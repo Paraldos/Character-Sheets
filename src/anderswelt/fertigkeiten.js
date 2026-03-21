@@ -33,6 +33,7 @@ export default class Fertigkeiten {
 
     const e = document.createElement("div");
     e.classList = "fertigkeiten";
+
     container.appendChild(e);
 
     this.addBlock(e, mentaleFertigkeiten, "Mental");
@@ -43,7 +44,7 @@ export default class Fertigkeiten {
   addBlock(container, list, titel = "") {
     const e = document.createElement("div");
     e.classList = "block";
-    e.innerHTML = titel;
+    e.innerHTML = `<h2>${titel}</h2>`;
     container.appendChild(e);
 
     list.forEach((fertigkeit) => this.addFertigkeit(e, fertigkeit));
