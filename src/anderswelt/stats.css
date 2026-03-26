@@ -1,0 +1,19 @@
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  .dmg {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .dmg__symbols {
+    display: flex;
+  }
+
+  .dmg__symbol {
+    max-width: 35px;
+  }
+}

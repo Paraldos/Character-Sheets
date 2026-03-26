@@ -1,38 +1,23 @@
+import "./basics.css";
+
 export default class Basics {
   constructor(container) {
-    const basics = [
-      "Name",
-      "Konzept",
-      "XP/Level",
-      "Herkunft",
-      "Hintergrund",
-      "Motive",
-      "Beschreibung",
-    ];
-
     const e = document.createElement("div");
     e.className = "basics";
     container.appendChild(e);
 
+    const basics = ["Name", "Konzept", "Herkunft", "Motive", "Beschreibung"];
     basics.forEach((label) => this.createField(label, e));
   }
 
   createField(labelText, container) {
     const field = document.createElement("div");
-    field.className = "basic-field";
-    if (labelText == "Beschreibung") {
-      field.classList.add("full");
-    }
-
-    const label = document.createElement("label");
-    label.textContent = labelText;
-
-    const value = document.createElement("div");
-    value.className = "basic-value";
-
-    field.appendChild(label);
-    field.appendChild(value);
-
+    field.className = "field";
+    if (labelText == "Beschreibung") field.classList.add("big");
+    field.innerHTML = `
+		<p class="value"></p>
+		<p class="label">${labelText}</p>
+	`;
     container.appendChild(field);
   }
 }
