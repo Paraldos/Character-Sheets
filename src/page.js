@@ -11,11 +11,9 @@ export default class Page {
 
   addColumns(amount) {
     this.page.classList.add("page-container");
-    this.page.style.gridTemplateColumns = `repeat(${amount}, 1fr)`;
-
     for (let i = 0; i < amount; i++) {
       const e = document.createElement("div");
-      e.className = "container-" + i;
+      e.className = "container container-" + i;
       this.page.appendChild(e);
       this.columns.push(e);
     }

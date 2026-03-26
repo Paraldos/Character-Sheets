@@ -1,17 +1,12 @@
 import Page from "../page";
 import "./anderswelt.css";
-import Basics from "./basics";
-import Fertigkeiten from "./fertigkeiten";
+import Attributes from "./attributes";
 
 export default class Anderswelt extends Page {
   constructor(container) {
-    super(container);
+    super(container, true);
     this.page.classList.add("anderswelt");
-    new Basics(this.page);
-
-    const e = document.createElement("div");
-    e.className = "anderswelt-bottom";
-    this.page.appendChild(e);
-    new Fertigkeiten(e);
+    this.addColumns(3);
+    new Attributes(this.columns[0]);
   }
 }
