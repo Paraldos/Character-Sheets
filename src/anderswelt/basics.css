@@ -1,11 +1,24 @@
 .basics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 
-  .big {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .stats__1,
+  .stats__2,
+  .stats__3,
+  .stats__4 {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats__3,
+  .stats__4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stats__4 .value {
+    height: 50px;
   }
 
   .field {
@@ -16,13 +29,14 @@
 
   .value {
     width: 100%;
-    height: 25px;
-    border-left: 3px solid black;
-    border-bottom: 1px solid black;
+    height: 30px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 7px;
   }
 
   .label {
-    font-size: 10px;
+    font-size: 0.8rem;
     line-height: 1;
   }
 }

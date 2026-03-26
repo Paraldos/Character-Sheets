@@ -6,18 +6,29 @@ export default class Basics {
     e.className = "basics";
     container.appendChild(e);
 
-    const basics = ["Name", "Konzept", "Herkunft", "Motive", "Beschreibung"];
-    basics.forEach((label) => this.createField(label, e));
+    e.innerHTML = `
+		<div class="stats__1">
+			${this.createField("Name")}
+			${this.createField("Konzept")}
+		</div>
+		<div class="stats__2">
+			${this.createField("Herkunft")}
+			${this.createField("Level / XP")}
+		</div>
+		<div class="stats__3">
+			${this.createField("Aspekte")}
+		</div>
+		<div class="stats__4">
+			${this.createField("Beschreibung")}
+		</div>
+	`;
   }
 
-  createField(labelText, container) {
-    const field = document.createElement("div");
-    field.className = "field";
-    if (labelText == "Beschreibung") field.classList.add("big");
-    field.innerHTML = `
-		<p class="value"></p>
-		<p class="label">${labelText}</p>
-	`;
-    container.appendChild(field);
+  createField(labelText) {
+    return `
+		<div class="field">
+			<p class="value"></p>
+			<p class="label">${labelText}</p>
+		</div>`;
   }
 }

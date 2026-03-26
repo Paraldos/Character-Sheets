@@ -1,19 +1,27 @@
 .stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  display: flex;
+  justify-content: space-between;
 
-  .dmg {
-    display: flex;
-    gap: 25px;
-    align-items: center;
+  .lvl {
+    display: grid;
+    grid-template-rows: 1fr auto;
   }
 
-  .dmg__symbols {
+  .dmg__symbols,
+  .stress__symbols {
     display: flex;
   }
 
-  .dmg__symbol {
+  .dmg__symbol,
+  .stress__symbol {
     max-width: 35px;
+  }
+
+  .value {
+    border-bottom: 1px solid black;
+  }
+
+  .label {
+    font-size: 0.8rem;
   }
 }
