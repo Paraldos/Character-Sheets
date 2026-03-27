@@ -2,6 +2,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  color-adjust: exact !important;
 }
 
 :root {
@@ -37,8 +40,14 @@ h4 {
   background-color: white;
   width: 29.7cm;
   height: 21cm;
-  margin: 0;
+  margin: auto;
   padding: 1cm;
+  overflow: hidden;
+
+  @media print {
+    size: landscape;
+    margin: 0;
+  }
 }
 
 .page-landscape {
