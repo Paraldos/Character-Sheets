@@ -9,14 +9,8 @@ import Talents from "./talents";
 
 export default class Anderswelt extends Page {
   playbooks = {
-    abenteurer: {},
-    soldat: {},
-    pilot: {},
-    detektiv: {},
-    aristokrat: {},
-    femFatal: {},
-    ganove: {
-      titel: "Ganove",
+    abenteurer: {
+      titel: "Abenteurer",
       description:
         "Gerissener Trickbetrüger und Dieb, der mit List und Heimlichkeit bekommt, was er will.",
       items: [
@@ -34,7 +28,7 @@ export default class Anderswelt extends Page {
         {
           titel: "Ablenken",
           cost: "Aktion, Stress",
-          description: "Ziel ist exponiert. +2 auf Attacken für eine Runde.",
+          description: "Alle attacken gegen Ziel erhalten für eine Runde +2.",
         },
         {
           titel: "Allerweltsgesicht",
@@ -73,7 +67,85 @@ export default class Anderswelt extends Page {
         {
           titel: "Rauchbombe",
           cost: "Aktion, Stress",
-          description: "Für eine Runde unsichtbar.",
+          description: "Umstehende Gegner müssen eine Runde aussetzen.",
+        },
+        {
+          titel: "Schatten",
+          cost: "Stress",
+          description: "+2 auf Heimlichkeit, solange du unauffällig bist.",
+        },
+        {
+          titel: "Trickster",
+          cost: "Stress",
+          description:
+            "+2 auf eine Probe für Diebstahl, Falschspiel oder Tricks.",
+        },
+      ],
+    },
+    soldat: {},
+    pilot: {},
+    detektiv: {},
+    aristokrat: {},
+    femFatal: {},
+    ganove: {
+      titel: "Ganove",
+      description:
+        "Gerissener Trickbetrüger und Dieb, der mit List und Heimlichkeit bekommt, was er will.",
+      items: [
+        { name: "Pistole" },
+        { name: "Messer" },
+        { name: "Schlagring" },
+        { name: "Dietriche" },
+        { name: "Brechstange" },
+        { name: "Lampe" },
+        { name: "Falsche Papiere" },
+        { name: "Verkleidung" },
+        { name: "Proviant", amount: 3 },
+      ],
+      talents: [
+        {
+          titel: "Ablenken",
+          cost: "Aktion, Stress",
+          description: "Alle attacken gegen Ziel erhalten für eine Runde +2.",
+        },
+        {
+          titel: "Allerweltsgesicht",
+          description:
+            "Du wirst meist ignoriert und bleibst kaum in Erinnerung.",
+        },
+        {
+          titel: "Assassine",
+          description: "2 Schaden gegen abgelenkte oder unvorbereitete Gegner.",
+        },
+        {
+          titel: "Fasttalker",
+          cost: "Stress",
+          description: "+2 auf eine Probe zum Lügen oder Herausreden.",
+        },
+        {
+          titel: "Finte",
+          cost: "Aktion, Stress",
+          description: "Führe eine Attacke mit +2 aus.",
+        },
+        {
+          titel: "Flinke Finger",
+          cost: "Stress",
+          description: "+2, um Schloss oder Falle in Sekunden zu knacken.",
+        },
+        {
+          titel: "Glück",
+          cost: "Einmal pro Abend",
+          description: "Wiederhole alle Misserfolge einer Probe.",
+        },
+        {
+          titel: "Kontakte",
+          cost: "Einmal pro Abend",
+          description: "Du kennst hier jemanden, der helfen kann.",
+        },
+        {
+          titel: "Rauchbombe",
+          cost: "Aktion, Stress",
+          description: "Umstehende Gegner müssen eine Runde aussetzen.",
         },
         {
           titel: "Schatten",

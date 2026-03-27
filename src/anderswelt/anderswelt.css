@@ -1,4 +1,6 @@
 .anderswelt {
+  margin-bottom: 50px;
+
   @font-face {
     font-family: "Bangers";
     src: url("src/assets/Bangers-Regular.ttf") format("truetype");
