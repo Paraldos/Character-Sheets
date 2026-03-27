@@ -1,6 +1,10 @@
 .anderswelt {
   margin-bottom: 50px;
 
+  @media print {
+    margin-bottom: 0;
+  }
+
   @font-face {
     font-family: "Bangers";
     src: url("src/assets/Bangers-Regular.ttf") format("truetype");
@@ -8,7 +12,7 @@
     font-style: normal;
   }
 
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto 1fr 1.1fr;
   gap: 35px;
 
   h1,
@@ -26,11 +30,5 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-  }
-}
-
-@media print {
-  .anderswelt {
-    margin-bottom: 0;
   }
 }

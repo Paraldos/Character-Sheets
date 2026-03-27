@@ -8,6 +8,10 @@
   gap: 20px;
   align-items: center;
 
+  h1 {
+    white-space: nowrap;
+  }
+
   p {
     font-size: 0.9rem;
   }

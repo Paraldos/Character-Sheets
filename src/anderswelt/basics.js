@@ -7,23 +7,16 @@ export default class Basics {
     container.appendChild(e);
 
     e.innerHTML = `
-		<div class="stats__1">
-			${this.createField("Name")}
-			${this.createField("Motiv")}
-		</div>
-		<div class="stats__2">
-			${this.createField("Herkunft")}
-			${this.createField("Level / XP")}
-		</div>
-		<div class="stats__3">
-			${this.createField("Beschreibung")}
-		</div>
+		${this.createField("Name")}
+		${this.createField("Level / XP")}
+		${this.createField("Herkunft / Motiv", "wide")}
+		${this.createField("Beschreibung", "wide tall")}
 	`;
   }
 
-  createField(labelText) {
+  createField(labelText, classes) {
     return `
-		<div class="field">
+		<div class="field ${classes}">
 			<p class="value"></p>
 			<p class="label">${labelText}</p>
 		</div>`;

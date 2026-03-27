@@ -1,25 +1,7 @@
 .basics {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 15px;
-
-  .stats__1,
-  .stats__2,
-  .stats__3,
-  .stats__4 {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .stats__3,
-  .stats__4 {
-    grid-template-columns: 1fr;
-  }
-
-  .stats__4 .value {
-    height: 50px;
-  }
+  grid-template-columns: 2fr 1fr;
 
   .field {
     display: flex;
@@ -38,5 +20,14 @@
   .label {
     font-size: 0.8rem;
     line-height: 1;
+  }
+
+  .wide {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .tall .value {
+    height: 50px;
   }
 }
