@@ -26,17 +26,16 @@ export default class Anderswelt extends Page {
       talents: [
         {
           titel: "Draufgänger",
-          description: "Du bist immun gegen Angst oder Einschüchtern.",
+          description: "Du bist immun gegen Angst und Einschüchtern.",
         },
         {
           titel: "Einfallsreich",
-          cost: "Stress",
-          description: "Improvisierte Werkzeuge geben +2 anstelle von +1.",
+          description: "Improvisierte Werkzeuge geben dir +2.",
         },
         {
           titel: "Fit",
           cost: "Stress",
-          description: "+2 auf Athletik- oder Akrobatik-Proben.",
+          description: "+2 auf Athletik- oder Akrobatik-Probe.",
         },
         {
           titel: "Goldnase",
@@ -51,8 +50,9 @@ export default class Anderswelt extends Page {
             "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einer Bestie, einem Tier oder einer Spur.",
         },
         {
-          titel: "Kletteraffe",
-          description: "+2 auf Klettern- und Balancieren-Proben.",
+          titel: "Kampfrausch",
+          cost: "Stress",
+          description: "+2 auf Nahkampf Attacke-Probe.",
         },
         {
           titel: "Scharfschütze",
@@ -62,8 +62,7 @@ export default class Anderswelt extends Page {
         {
           titel: "Scout",
           cost: "Stress",
-          description:
-            "+2 auf Orientierung-, Wahrnehmung- oder Wildnisleben-Probe.",
+          description: "+2 auf Orientierung-, Wahrnehmung- oder Wildnis-Probe.",
         },
         {
           titel: "Zäh",
@@ -77,23 +76,19 @@ export default class Anderswelt extends Page {
         },
       ],
     },
-    soldat: {},
-    pilot: {},
-    detektiv: {},
-    aristokrat: {},
     charmer: {
       titel: "Charmeur",
       description:
         "Verführerischer Manipulator, der über Leichen geht, um seine Ziele zu erreichen.",
       items: [
+        { name: "Messer" },
         { name: "Pistole" },
         { name: "Dietriche" },
-        { name: "Elegantes Outfit" },
         { name: "Gift" },
         { name: "Schlafmittel" },
         { name: "Falsche Papiere" },
-        { name: "Zigaretten" },
         { name: "Bargeld", amount: 3 },
+        { name: "Elegantes Outfit" },
       ],
       talents: [
         {
@@ -127,14 +122,14 @@ export default class Anderswelt extends Page {
             "Der Erzähler beantwortet dir 3 soziale oder politische Ja/Nein-Fragen.",
         },
         {
-          titel: "Kontakte",
-          cost: "Urbane Umgebung, eine Stunde",
-          description: "Du treibst jemanden auf, der helfen kann.",
-        },
-        {
           titel: "Netzwerk",
           cost: "Urbane Umgebung, eine Stunde",
           description: "Du erhältst Zugang zu einem exklusiven Ort oder Kreis.",
+        },
+        {
+          titel: "Ruhm",
+          description:
+            "Du bist berühmt (wähle: Film, Musik, Mode oder Theater).",
         },
         {
           titel: "Silberzunge",
@@ -143,9 +138,72 @@ export default class Anderswelt extends Page {
         },
         {
           titel: "Entertainer",
+          description: "+2 auf Unterhaltungs-Proben (z.B. Singen, Tanzen).",
+        },
+      ],
+    },
+    detective: {
+      titel: "Detektiv",
+      description:
+        "Hartgesottener Ermittler, stehts auf der Suche nach der Wahrheit.",
+      items: [
+        { name: "Revolver" },
+        { name: "Kamera" },
+        { name: "Forensik-Set" },
+        { name: "Dietriche" },
+        { name: "Taschenlampe" },
+        { name: "Handschellen" },
+        { name: "(Falscher) Ausweis" },
+      ],
+      talents: [
+        {
+          titel: "Analyse",
           cost: "Stress",
           description:
-            "+2 auf Unterhaltungsproben (Singen, Tanzen etc.). Hält für eine Szene.",
+            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einem Tatort oder einem Verdächtigen.",
+        },
+        {
+          titel: "Beschützer",
+          description:
+            "+2 auf Kampf- und Widerstand-Proben, wenn du jemanden beschützt.",
+        },
+        {
+          titel: "Gassenwissen",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
+        },
+        {
+          titel: "Gutes Gedächtnis",
+          description:
+            "Du kannst dich an alles erinnern, das du einmal gesehen oder gehört hast.",
+        },
+        {
+          titel: "Kontakte",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Du kennst jemanden, der in der aktuellen Situation hilfreich sein könnte.",
+        },
+        {
+          titel: "Menschenkenner",
+          cost: "Stress",
+          description: "+2 auf Verhör- oder Empathie-Probe.",
+        },
+        {
+          titel: "Schatten",
+          cost: "Stress",
+          description: "+2 auf Schleichen-Probe.",
+        },
+        {
+          titel: "Spürnase",
+          cost: "Stress",
+          description:
+            "+2 auf Wahrnehmung-, Rätsel-lösen- oder Ermitteln-Probe.",
+        },
+        {
+          titel: "Zweiter Wind",
+          cost: "Einmal pro Abend",
+          description: "Erhole dich von 1 Schaden.",
         },
       ],
     },
@@ -156,10 +214,9 @@ export default class Anderswelt extends Page {
       items: [
         { name: "Pistole" },
         { name: "Schlagring" },
-        { name: "Messer" },
         { name: "Dietriche" },
-        { name: "Brechstange" },
-        { name: "Lampe" },
+        { name: "Brecheisen" },
+        { name: "Taschenlampe" },
         { name: "Falsche Papiere" },
         { name: "Verkleidung" },
         { name: "Bargeld" },
@@ -180,11 +237,6 @@ export default class Anderswelt extends Page {
           description: "+2 auf Lügen- oder Herausreden-Probe.",
         },
         {
-          titel: "Finte",
-          cost: "Stress",
-          description: "+2 auf Attacke-Probe.",
-        },
-        {
           titel: "Flinke Finger",
           cost: "Stress",
           description: "+2 auf Diebstahl- oder Falschspiel-Probe.",
@@ -193,7 +245,7 @@ export default class Anderswelt extends Page {
           titel: "Gassenwissen",
           cost: "Urbane Umgebung, eine Stunde",
           description:
-            "Der Erzähler beantwortert dir 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
+            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
         },
         {
           titel: "Glück",
@@ -203,7 +255,8 @@ export default class Anderswelt extends Page {
         {
           titel: "Kontakte",
           cost: "Urbane Umgebung, eine Stunde",
-          description: "Du treibst jemanden auf, der helfen kann.",
+          description:
+            "Du kennst jemanden, der in der aktuellen Situation hilfreich sein könnte.",
         },
         {
           titel: "Rauchbombe",
@@ -214,16 +267,18 @@ export default class Anderswelt extends Page {
         {
           titel: "Schatten",
           cost: "Stress",
-          description:
-            "+2 auf Heimlichkeit. Hält solange du dich unauffällig verhältst.",
+          description: "+2 auf Schleichen-Probe.",
         },
         {
           titel: "Schlossmeister",
           cost: "Stress",
-          description: "+2 auf Schlösser- oder Fallen-Proben.",
+          description: "+2 auf Schlösser- oder Fallen-Probe.",
         },
       ],
     },
+
+    soldat: {},
+    pilot: {},
     medium: {},
     arzt: {},
   };

@@ -6,6 +6,10 @@ export default class Talents {
     container.innerHTML += `
 		<div class="talents">
 			${playbook.talents.map((talent) => this.getTalent(talent)).join("")}
+			<div class="talent">
+				${this.getBox(2)}
+				<p>Lern ein Talent eines anderen Playbooks</p>
+			</div>
 		</div>
 	`;
   }

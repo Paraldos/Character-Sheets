@@ -7,7 +7,7 @@ export default class Attributes {
     "Gerissenheit",
     "Kämpfen",
     "Charisma",
-    "Dominanz",
+    // "Dominanz",
     "Klugheit",
     "Instinkt",
   ];
