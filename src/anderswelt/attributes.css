@@ -1,9 +1,10 @@
 .attributes {
   background-color: black;
   color: white;
-  display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  margin: -38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: -1cm;
   margin-right: 0;
   padding: 25px 15px;
 

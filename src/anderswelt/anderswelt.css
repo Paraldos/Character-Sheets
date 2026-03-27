@@ -28,3 +28,26 @@
     gap: 25px;
   }
 }
+
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  .page {
+    width: 29.7cm;
+    height: 21cm;
+    margin: 0;
+    padding: 1cm;
+  }
+
+  .anderswelt {
+    margin-bottom: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
