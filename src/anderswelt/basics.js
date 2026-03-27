@@ -9,16 +9,13 @@ export default class Basics {
     e.innerHTML = `
 		<div class="stats__1">
 			${this.createField("Name")}
-			${this.createField("Konzept")}
+			${this.createField("Motiv")}
 		</div>
 		<div class="stats__2">
 			${this.createField("Herkunft")}
 			${this.createField("Level / XP")}
 		</div>
 		<div class="stats__3">
-			${this.createField("Aspekte")}
-		</div>
-		<div class="stats__4">
 			${this.createField("Beschreibung")}
 		</div>
 	`;

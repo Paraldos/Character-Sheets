@@ -37,7 +37,7 @@
     height: 20px;
   }
 
-  .item::before {
+  .box {
     content: "";
     width: 20px;
     height: 20px;

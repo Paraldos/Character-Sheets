@@ -21,6 +21,19 @@ export default class Basics {
   }
 
   getItem(item) {
-    return `<p class="item">${item}</p>`;
+    let boxHtml = this.getBox(item.amount ? item.amount : 1);
+    return `
+	<div class="item">
+		${boxHtml}
+		<p>${item.name}</p>
+	</div>`;
+  }
+
+  getBox(amount) {
+    let boxHtml = "";
+    for (let i = 0; i < amount; i++) {
+      boxHtml += '<div class="box"></div>';
+    }
+    return boxHtml;
   }
 }

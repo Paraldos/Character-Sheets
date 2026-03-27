@@ -5,6 +5,7 @@ export default class Titel {
     container.innerHTML = `
 		<div class="titel">
 			<h1>${playbook.titel}</h1>
+			<p>${playbook.description}</p>
 		</div>
 	`;
   }

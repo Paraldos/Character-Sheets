@@ -5,6 +5,7 @@ import Basics from "./basics";
 import Stats from "./stats";
 import Inventory from "./inventory";
 import Titel from "./titel";
+import Talents from "./talents";
 
 export default class Anderswelt extends Page {
   playbooks = {
@@ -16,16 +17,22 @@ export default class Anderswelt extends Page {
     femFatal: {},
     ganove: {
       titel: "Ganove",
+      description:
+        "Gerissener Trickbetrüger und Dieb, der mit List und Heimlichkeit bekommt, was er will.",
       items: [
-        "Pistole",
-        "Messer",
-        "Schlagring",
-        "Dietriche",
-        "Brechstange",
-        "Lampe",
-        "Falsche Papiere",
-        "Verkleidung",
-        "Proviant",
+        { name: "Pistole" },
+        { name: "Messer" },
+        { name: "Schlagring" },
+        { name: "Dietriche" },
+        { name: "Brechstange" },
+        { name: "Lampe" },
+        { name: "Falsche Papiere" },
+        { name: "Verkleidung" },
+        { name: "Proviant", amount: 3 },
+      ],
+      talents: [
+        { description: "Bert", amount: 2 },
+        { description: "Bert1", amount: 1 },
       ],
     },
     medium: {},
@@ -43,5 +50,6 @@ export default class Anderswelt extends Page {
     new Stats(this.columns[1]);
     new Inventory(this.columns[1], selectedPlaybook);
     new Titel(this.columns[2], selectedPlaybook);
+    new Talents(this.columns[2], selectedPlaybook);
   }
 }
