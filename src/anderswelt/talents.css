@@ -6,14 +6,17 @@
 
   .talent {
     display: flex;
-    align-items: center;
     gap: 5px;
-    height: 20px;
+  }
+
+  .talent-titel {
+    font-weight: bold;
   }
 
   .box {
+    margin-top: 3px;
     content: "";
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     border: 2px solid black;
     border-radius: 5px;

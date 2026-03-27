@@ -31,8 +31,61 @@ export default class Anderswelt extends Page {
         { name: "Proviant", amount: 3 },
       ],
       talents: [
-        { description: "Bert", amount: 2 },
-        { description: "Bert1", amount: 1 },
+        {
+          titel: "Ablenken",
+          cost: "Aktion, Stress",
+          description: "Ziel ist exponiert. +2 auf Attacken für eine Runde.",
+        },
+        {
+          titel: "Allerweltsgesicht",
+          description:
+            "Du wirst meist ignoriert und bleibst kaum in Erinnerung.",
+        },
+        {
+          titel: "Assassine",
+          description: "2 Schaden gegen abgelenkte oder unvorbereitete Gegner.",
+        },
+        {
+          titel: "Fasttalker",
+          cost: "Stress",
+          description: "+2 auf eine Probe zum Lügen oder Herausreden.",
+        },
+        {
+          titel: "Finte",
+          cost: "Aktion, Stress",
+          description: "Führe eine Attacke mit +2 aus.",
+        },
+        {
+          titel: "Flinke Finger",
+          cost: "Stress",
+          description: "+2, um Schloss oder Falle in Sekunden zu knacken.",
+        },
+        {
+          titel: "Glück",
+          cost: "Einmal pro Abend",
+          description: "Wiederhole alle Misserfolge einer Probe.",
+        },
+        {
+          titel: "Kontakte",
+          cost: "Einmal pro Abend",
+          description: "Du kennst hier jemanden, der helfen kann.",
+        },
+        {
+          titel: "Rauchbombe",
+          cost: "Aktion, Stress",
+          description: "Für eine Runde unsichtbar.",
+        },
+        {
+          titel: "Schatten",
+          cost: "Stress",
+          description: "+2 auf Heimlichkeit, solange du unauffällig bist.",
+        },
+        {
+          titel: "Trickster",
+          cost: "Stress",
+          description:
+            "+2 auf eine Probe für Diebstahl, Falschspiel oder Tricks.",
+        },
       ],
     },
     medium: {},

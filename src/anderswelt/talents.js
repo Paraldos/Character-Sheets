@@ -15,9 +15,11 @@ export default class Talents {
     return `
 	<div class="talent">
 		${boxHtml}
-		<p>${talent.description}</p>
+		<p><span class="talent-titel">${talent.titel}</span>${talent.cost ? " (" + talent.cost + ")" : ""}: ${talent.description}</p>
 	</div>`;
   }
+
+  getCosts() {}
 
   getBox(amount) {
     let boxHtml = "";
