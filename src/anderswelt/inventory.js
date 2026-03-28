@@ -8,7 +8,7 @@ export default class Basics {
 
     e.innerHTML = `
 		<div class="list">
-			<h1>Gepäck</h1>
+			<h2>Gepäck</h2>
 			<p>Leicht (2)</p>
 			<p>Mittel (5)</p>
 			<p>Schwer (10)</p>
