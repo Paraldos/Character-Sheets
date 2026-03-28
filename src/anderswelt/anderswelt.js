@@ -27,7 +27,7 @@ export default class Anderswelt extends Page {
           titel: "Bestienmeister",
           cost: "Einmal pro Abend",
           description:
-            "Ein wildes Tier befolgt für den Rest der Szene einen deiner Befehle.",
+            "Gib einem wilden Tier einen Befehl den es für den rest der Szene befolgen muss.",
         },
         {
           titel: "Draufgänger",
@@ -79,7 +79,7 @@ export default class Anderswelt extends Page {
     tinkerer: {
       titel: "Bastler",
       description:
-        "Genialer Mechaniker, der aus Draht und Chaos funktionierende Lösungen baut.",
+        "Genialer Mechaniker, der aus Draht und Chaos Lösungen konstruiert.",
       items: [
         { name: "Flinte" },
         { name: "Knüppel" },
@@ -201,7 +201,7 @@ export default class Anderswelt extends Page {
     detective: {
       titel: "Detektiv",
       description:
-        "Hartgesottener Ermittler, stets auf der Suche nach der Wahrheit.",
+        "Hartgesottener Ermittler, der stets nach der Warheit sucht.",
       items: [
         { name: "Revolver" },
         { name: "Kamera" },
@@ -264,7 +264,7 @@ export default class Anderswelt extends Page {
     ganove: {
       titel: "Ganove",
       description:
-        "Gerissener Trickbetrüger und Dieb, der mit List bekommt, was er will.",
+        "Gerissener Schurke und Einbrecher, der sich auf List und Tücke verlässt.",
       items: [
         { name: "Pistole" },
         { name: "Dietriche" },
@@ -323,7 +323,7 @@ export default class Anderswelt extends Page {
         {
           titel: "Schlossmeister",
           cost: "Stress",
-          description: "+2 beim Umgang mit Schloss oder Falle.",
+          description: "+2 beim Schloss oder Falle knacken.",
         },
       ],
     },
