@@ -20,10 +20,15 @@ export default class Anderswelt extends Page {
         { name: "Kletterset" },
         { name: "Karte & Kompass" },
         { name: "Feldstecher" },
-        { name: "Fackel", amount: 3 },
-        { name: "Proviant", amount: 5 },
+        { name: "Proviant", amount: 2 },
       ],
       talents: [
+        {
+          titel: "Bestienmeister",
+          cost: "Einmal pro Abend",
+          description:
+            "Ein wildes Tier befolgt für den Rest der Szene einen deiner Befehle.",
+        },
         {
           titel: "Draufgänger",
           description: "Du bist immun gegen Angst und Einschüchtern.",
@@ -35,24 +40,18 @@ export default class Anderswelt extends Page {
         {
           titel: "Fit",
           cost: "Stress",
-          description: "+2 auf Athletik- oder Akrobatik-Probe.",
+          description: "+2 auf Athletik oder Akrobatik.",
         },
         {
           titel: "Goldnase",
           cost: "Stress",
           description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einer Ruine oder einem Schatz.",
-        },
-        {
-          titel: "Jäger",
-          cost: "Stress",
-          description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einer Bestie, einem Tier oder einer Spur.",
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einer Ruine oder einem Schatz.",
         },
         {
           titel: "Kampfrausch",
           cost: "Stress",
-          description: "+2 auf Nahkampf Attacke-Probe.",
+          description: "+2 auf Nahkampfattacken.",
         },
         {
           titel: "Scharfschütze",
@@ -62,217 +61,18 @@ export default class Anderswelt extends Page {
         {
           titel: "Scout",
           cost: "Stress",
-          description: "+2 auf Orientierung-, Wahrnehmung- oder Wildnis-Probe.",
+          description: "+2 auf Orientierung, Wahrnehmung oder Wildnisleben.",
+        },
+        {
+          titel: "Spurenleser",
+          cost: "Stress",
+          description:
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einer Bestie, einem Tier oder einer Spur.",
         },
         {
           titel: "Zäh",
           cost: "Einmal pro Abend",
           description: "Ignoriere eingehenden Schaden.",
-        },
-        {
-          titel: "Zweiter Wind",
-          cost: "Einmal pro Abend",
-          description: "Erhole dich von 1 Schaden.",
-        },
-      ],
-    },
-    charmer: {
-      titel: "Charmeur",
-      description:
-        "Verführerischer Manipulator, der über Leichen geht, um seine Ziele zu erreichen.",
-      items: [
-        { name: "Messer" },
-        { name: "Pistole" },
-        { name: "Dietriche" },
-        { name: "Gift" },
-        { name: "Schlafmittel" },
-        { name: "Falsche Papiere" },
-        { name: "Bargeld", amount: 3 },
-        { name: "Elegantes Outfit" },
-      ],
-      talents: [
-        {
-          titel: "Assassine",
-          description: "+1 Schaden gegen unvorbereitete Gegner.",
-        },
-        {
-          titel: "Eiskalt",
-          cost: "Stress",
-          description: "+2 auf Einschüchtern-Probe.",
-        },
-        {
-          titel: "Flinke Finger",
-          cost: "Stress",
-          description:
-            "+2 auf Diebstahl- oder Falschspiel-Probe (z.B. um Gift unterzumischen).",
-        },
-        {
-          titel: "Gutaussehend",
-          description: "+2 auf Verführen-Proben.",
-        },
-        {
-          titel: "Harmlos",
-          description:
-            "Du wirst generell unterschätzt und im Kampf nur attackiert, wenn kein anderes Ziel zur Verfügung steht.",
-        },
-        {
-          titel: "Klatsch",
-          cost: "Urbane Umgebung, eine Stunde",
-          description:
-            "Der Erzähler beantwortet dir 3 soziale oder politische Ja/Nein-Fragen.",
-        },
-        {
-          titel: "Netzwerk",
-          cost: "Urbane Umgebung, eine Stunde",
-          description: "Du erhältst Zugang zu einem exklusiven Ort oder Kreis.",
-        },
-        {
-          titel: "Ruhm",
-          description:
-            "Du bist berühmt (wähle: Film, Musik, Mode oder Theater).",
-        },
-        {
-          titel: "Silberzunge",
-          cost: "Stress",
-          description: "+2 auf Überreden-, Manipulieren- oder Lügen-Probe.",
-        },
-        {
-          titel: "Entertainer",
-          description: "+2 auf Unterhaltungs-Proben (z.B. Singen, Tanzen).",
-        },
-      ],
-    },
-    detective: {
-      titel: "Detektiv",
-      description:
-        "Hartgesottener Ermittler, stehts auf der Suche nach der Wahrheit.",
-      items: [
-        { name: "Revolver" },
-        { name: "Kamera" },
-        { name: "Forensik-Set" },
-        { name: "Dietriche" },
-        { name: "Taschenlampe" },
-        { name: "Handschellen" },
-        { name: "(Falscher) Ausweis" },
-      ],
-      talents: [
-        {
-          titel: "Analyse",
-          cost: "Stress",
-          description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einem Tatort oder einem Verdächtigen.",
-        },
-        {
-          titel: "Beschützer",
-          description:
-            "+2 auf Kampf- und Widerstand-Proben, wenn du jemanden beschützt.",
-        },
-        {
-          titel: "Gassenwissen",
-          cost: "Urbane Umgebung, eine Stunde",
-          description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
-        },
-        {
-          titel: "Gutes Gedächtnis",
-          description:
-            "Du kannst dich an alles erinnern, das du einmal gesehen oder gehört hast.",
-        },
-        {
-          titel: "Kontakte",
-          cost: "Urbane Umgebung, eine Stunde",
-          description:
-            "Du kennst jemanden, der in der aktuellen Situation hilfreich sein könnte.",
-        },
-        {
-          titel: "Menschenkenner",
-          cost: "Stress",
-          description: "+2 auf Verhör- oder Empathie-Probe.",
-        },
-        {
-          titel: "Schatten",
-          cost: "Stress",
-          description: "+2 auf Schleichen-Probe.",
-        },
-        {
-          titel: "Spürnase",
-          cost: "Stress",
-          description:
-            "+2 auf Wahrnehmung-, Rätsel-lösen- oder Ermitteln-Probe.",
-        },
-        {
-          titel: "Zweiter Wind",
-          cost: "Einmal pro Abend",
-          description: "Erhole dich von 1 Schaden.",
-        },
-      ],
-    },
-    ganove: {
-      titel: "Ganove",
-      description:
-        "Gerissener Trickbetrüger und Dieb, der mit List bekommt, was er will.",
-      items: [
-        { name: "Pistole" },
-        { name: "Schlagring" },
-        { name: "Dietriche" },
-        { name: "Brecheisen" },
-        { name: "Taschenlampe" },
-        { name: "Falsche Papiere" },
-        { name: "Verkleidung" },
-        { name: "Bargeld" },
-      ],
-      talents: [
-        {
-          titel: "Allerweltsgesicht",
-          description:
-            "Du wirst meist ignoriert und bleibst kaum in Erinnerung.",
-        },
-        {
-          titel: "Assassine",
-          description: "+1 Schaden gegen unvorbereitete Gegner.",
-        },
-        {
-          titel: "Fasttalker",
-          cost: "Stress",
-          description: "+2 auf Lügen- oder Herausreden-Probe.",
-        },
-        {
-          titel: "Flinke Finger",
-          cost: "Stress",
-          description: "+2 auf Diebstahl- oder Falschspiel-Probe.",
-        },
-        {
-          titel: "Gassenwissen",
-          cost: "Urbane Umgebung, eine Stunde",
-          description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
-        },
-        {
-          titel: "Glück",
-          cost: "Einmal pro Abend",
-          description: "Wiederhole alle Misserfolge einer Probe.",
-        },
-        {
-          titel: "Kontakte",
-          cost: "Urbane Umgebung, eine Stunde",
-          description:
-            "Du kennst jemanden, der in der aktuellen Situation hilfreich sein könnte.",
-        },
-        {
-          titel: "Rauchbombe",
-          cost: "Aktion, Stress",
-          description:
-            "Umstehende Gegner sind verwirrt und müssen eine Runde aussetzen.",
-        },
-        {
-          titel: "Schatten",
-          cost: "Stress",
-          description: "+2 auf Schleichen-Probe.",
-        },
-        {
-          titel: "Schlossmeister",
-          cost: "Stress",
-          description: "+2 auf Schlösser- oder Fallen-Probe.",
         },
       ],
     },
@@ -298,16 +98,16 @@ export default class Anderswelt extends Page {
           titel: "Fachkenntnis",
           cost: "Stress",
           description:
-            "Du erkennst mit einem Blick, wozu eine Maschine dient und wie sie funktioniert.",
+            "Du erkennst mit einem Blick, wozu eine Maschine dient und wie sie ungefähr funktioniert.",
         },
         {
           titel: "Fahrer",
           description:
-            "Du kannst auch exotische Fahrzeuge wie Flugzeuge oder U-Boote steuern.",
+            "Du kannst exotische Fahrzeuge wie Flugzeuge oder U-Boote steuern.",
         },
         {
           titel: "Ingenieur",
-          description: "+2 auf Handwerk- und Reparatur-Proben.",
+          description: "+2 auf Handwerk und Reparaturen.",
         },
         {
           titel: "Kaugummi und Faden",
@@ -335,7 +135,195 @@ export default class Anderswelt extends Page {
           titel: "Theorie",
           cost: "Stress",
           description:
-            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einem Gerät oder einer wissenschaftlichen Theorie.",
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einem Gerät oder einer wissenschaftlichen Theorie.",
+        },
+      ],
+    },
+    charmer: {
+      titel: "Charmeur",
+      description:
+        "Verführerischer Manipulator, der über Leichen geht, um seine Ziele zu erreichen.",
+      items: [
+        { name: "Messer" },
+        { name: "Dietriche" },
+        { name: "Gift" },
+        { name: "Schlafmittel" },
+        { name: "Falsche Papiere" },
+        { name: "Elegantes Outfit" },
+      ],
+      talents: [
+        {
+          titel: "Assassine",
+          description: "+1 Schaden gegen unvorbereitete Gegner.",
+        },
+        {
+          titel: "Eiskalt",
+          cost: "Stress",
+          description: "+2 auf Einschüchtern oder Drohen.",
+        },
+        {
+          titel: "Flinke Finger",
+          cost: "Stress",
+          description:
+            "+2 auf Diebstahl oder Falschspiel (z.B. um Gift unterzumischen).",
+        },
+        {
+          titel: "Gutaussehend",
+          description: "+2 auf Verführen.",
+        },
+        {
+          titel: "Harmlos",
+          description:
+            "Du wirst generell unterschätzt und im Kampf nur attackiert, wenn kein anderes Ziel zur Verfügung steht.",
+        },
+        {
+          titel: "Klatsch",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Der Erzähler beantwortet 3 soziale oder politische Ja/Nein-Fragen.",
+        },
+        {
+          titel: "Netzwerk",
+          cost: "Urbane Umgebung, eine Stunde",
+          description: "Du erhältst Zugang zu einem exklusiven Ort oder Kreis.",
+        },
+        {
+          titel: "Silberzunge",
+          cost: "Stress",
+          description: "+2 auf Überreden, Manipulieren oder Lügen.",
+        },
+        {
+          titel: "Entertainer",
+          description: "+2 um andere zu unterhalten (z.B. Singen, Tanzen).",
+        },
+      ],
+    },
+    detective: {
+      titel: "Detektiv",
+      description:
+        "Hartgesottener Ermittler, stets auf der Suche nach der Wahrheit.",
+      items: [
+        { name: "Revolver" },
+        { name: "Kamera" },
+        { name: "Forensik-Set" },
+        { name: "Dietriche" },
+        { name: "Taschenlampe" },
+        { name: "(Falscher) Ausweis" },
+      ],
+      talents: [
+        {
+          titel: "Analyse",
+          cost: "Stress",
+          description:
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einem Tatort oder einem Verdächtigen.",
+        },
+        {
+          titel: "Beschützer",
+          description:
+            "+2 auf Kampf und Widerstand, wenn du jemanden beschützt.",
+        },
+        {
+          titel: "Gassenwissen",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
+        },
+        {
+          titel: "Gutes Gedächtnis",
+          description:
+            "Du kannst dich an alles erinnern, das du einmal gesehen oder gehört hast.",
+        },
+        {
+          titel: "Kontakte",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Du treibst jemanden auf, der in der aktuellen Situation helfen kann.",
+        },
+        {
+          titel: "Menschenkenner",
+          cost: "Stress",
+          description: "+2 auf Verhör oder Empathie.",
+        },
+        {
+          titel: "Schatten",
+          cost: "Stress",
+          description: "+2 auf Schleiche, Beschatten oder Schmuggeln.",
+        },
+        {
+          titel: "Spürnase",
+          cost: "Stress",
+          description: "+2 auf Wahrnehmung oder Ermitteln.",
+        },
+        {
+          titel: "Zweiter Wind",
+          cost: "Einmal pro Abend",
+          description: "Erhole dich von 1 Schaden.",
+        },
+      ],
+    },
+    ganove: {
+      titel: "Ganove",
+      description:
+        "Gerissener Trickbetrüger und Dieb, der mit List bekommt, was er will.",
+      items: [
+        { name: "Pistole" },
+        { name: "Dietriche" },
+        { name: "Brecheisen" },
+        { name: "Taschenlampe" },
+        { name: "Falsche Papiere" },
+        { name: "Verkleidung" },
+      ],
+      talents: [
+        {
+          titel: "Allerweltsgesicht",
+          description: "Du wirst leicht übersehen und vergessen.",
+        },
+        {
+          titel: "Assassine",
+          description: "+1 Schaden gegen unvorbereitete Gegner.",
+        },
+        {
+          titel: "Fasttalker",
+          cost: "Stress",
+          description: "+2 auf Lügen oder Herausreden.",
+        },
+        {
+          titel: "Flinke Finger",
+          cost: "Stress",
+          description: "+2 auf Diebstahl oder Falschspiel.",
+        },
+        {
+          titel: "Gassenwissen",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Der Erzähler beantwortet 3 Ja/Nein-Fragen zur kriminellen Unterwelt.",
+        },
+        {
+          titel: "Glück",
+          cost: "Einmal pro Abend",
+          description: "Wiederhol Misserfolge einer Probe.",
+        },
+        {
+          titel: "Kontakte",
+          cost: "Urbane Umgebung, eine Stunde",
+          description:
+            "Du treibst jemanden auf, der in der aktuellen Situation helfen kann.",
+        },
+        {
+          titel: "Rauchbombe",
+          cost: "Aktion, Stress",
+          description:
+            "Umstehende Gegner sind verwirrt und müssen eine Runde aussetzen.",
+        },
+        {
+          titel: "Schatten",
+          cost: "Stress",
+          description: "+2 auf Schleiche, Beschatten oder Schmuggeln.",
+        },
+        {
+          titel: "Schlossmeister",
+          cost: "Stress",
+          description: "+2 beim Umgang mit Schloss oder Falle.",
         },
       ],
     },
