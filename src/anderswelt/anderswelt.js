@@ -276,6 +276,69 @@ export default class Anderswelt extends Page {
         },
       ],
     },
+    tinkerer: {
+      titel: "Bastler",
+      description:
+        "Genialer Mechaniker, der aus Draht und Chaos funktionierende Lösungen baut.",
+      items: [
+        { name: "Flinte" },
+        { name: "Knüppel" },
+        { name: "Werkzeug" },
+        { name: "Ersatzteile" },
+        { name: "Taschenlampe" },
+        { name: "Sprengsatz" },
+        { name: "Granate", amount: 2 },
+      ],
+      talents: [
+        {
+          titel: "Einfallsreich",
+          description: "Improvisierte Werkzeuge geben dir +2.",
+        },
+        {
+          titel: "Fachkenntnis",
+          cost: "Stress",
+          description:
+            "Du erkennst mit einem Blick, wozu eine Maschine dient und wie sie funktioniert.",
+        },
+        {
+          titel: "Fahrer",
+          description:
+            "Du kannst auch exotische Fahrzeuge wie Flugzeuge oder U-Boote steuern.",
+        },
+        {
+          titel: "Ingenieur",
+          description: "+2 auf Handwerk- und Reparatur-Proben.",
+        },
+        {
+          titel: "Kaugummi und Faden",
+          cost: "Einmal pro Abend",
+          description: "Bringe ein defektes Gerät sofort zum Laufen.",
+        },
+        {
+          titel: "MacGyver",
+          cost: "Stress",
+          description:
+            "Nutze Schrott, um in wenigen Minuten eine Waffe, Sprengstoff oder Werkzeug zu improvisieren.",
+        },
+        {
+          titel: "Scotty",
+          cost: "Stress",
+          description:
+            "Erledige eine Reparatur in einem Bruchteil der Zeit: Wochen werden Tage, Tage werden Stunden etc.",
+        },
+        {
+          titel: "Sprengmeister",
+          cost: "Stress",
+          description: "+2 im Umgang mit Sprengstoff oder Granaten.",
+        },
+        {
+          titel: "Theorie",
+          cost: "Stress",
+          description:
+            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einem Gerät oder einer wissenschaftlichen Theorie.",
+        },
+      ],
+    },
 
     soldat: {},
     pilot: {},
