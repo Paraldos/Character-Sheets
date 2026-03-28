@@ -283,11 +283,6 @@ export default class Anderswelt extends Page {
           description: "+1 Schaden gegen unvorbereitete Gegner.",
         },
         {
-          titel: "Fasttalker",
-          cost: "Stress",
-          description: "+2 auf Lügen oder Herausreden.",
-        },
-        {
           titel: "Flinke Finger",
           cost: "Stress",
           description: "+2 auf Diebstahl oder Falschspiel.",
@@ -310,6 +305,11 @@ export default class Anderswelt extends Page {
             "Du treibst jemanden auf, der in der aktuellen Situation helfen kann.",
         },
         {
+          titel: "Lügner",
+          cost: "Stress",
+          description: "+2 auf Lügen oder Herausreden.",
+        },
+        {
           titel: "Rauchbombe",
           cost: "Aktion, Stress",
           description:
@@ -327,10 +327,71 @@ export default class Anderswelt extends Page {
         },
       ],
     },
+    medium: {
+      titel: "Medium",
+      description:
+        "Eine mystische Seherin, die mit Geistern spricht und verborgene Wahrheiten enthüllt.",
+      items: [
+        { name: "Dolch" },
+        { name: "Kristallkugel" },
+        { name: "Tarotkarten" },
+        { name: "Pendel" },
+        { name: "Drogen", amount: 3 },
+      ],
+      talents: [
+        {
+          titel: "Auspex",
+          cost: "10 Minuten",
+          description:
+            "Der Erzähler beantwortet dir 3 Ja/Nein-Fragen zu einer Person oder einem Gegenstand.",
+        },
+        {
+          titel: "Flüstern",
+          cost: "Stress",
+          description: "Sende jemandem eine kurze gedankliche Nachricht.",
+        },
+        {
+          titel: "Geistersinn",
+          cost: "Stress, Konzentration",
+          description:
+            "Kommuniziere mit Geistern oder nimm Übernatürliches wahr.",
+        },
+        {
+          titel: "Jinx",
+          cost: "Stress",
+          description: "Das Ziel hat für einen Tag Pech.",
+        },
+        {
+          titel: "Okkultist",
+          description: "+2 auf Okkultismus, Sagen und Legenden.",
+        },
+        {
+          titel: "Schleudern",
+          cost: "Stress",
+          description:
+            "Telekinetischer Angriff: Verursacht normalen Schaden und schleudert das Ziel von dir weg.",
+        },
+        {
+          titel: "Schutzkreis",
+          cost: "Stress, 10 Minuten",
+          description:
+            "Erschaffe einen Bereich, den eine von dir bestimmte Art von Wesen nicht betreten kann.",
+        },
+        {
+          titel: "Telekinesse",
+          cost: "Stress, Konzentration",
+          description: "Bewege einen kleinen Gegenstand mit deinem Geist.",
+        },
+        {
+          titel: "Vorahnung",
+          cost: "Einmal pro Abend",
+          description: "Wiederhole alle Misserfolge einer Probe.",
+        },
+      ],
+    },
 
     soldat: {},
     pilot: {},
-    medium: {},
     arzt: {},
   };
 

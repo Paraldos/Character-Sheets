@@ -7,3 +7,4 @@ new Anderswelt(app, "tinkerer");
 new Anderswelt(app, "charmer");
 new Anderswelt(app, "detective");
 new Anderswelt(app, "ganove");
+new Anderswelt(app, "medium");
